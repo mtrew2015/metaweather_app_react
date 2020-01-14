@@ -36,16 +36,21 @@ p {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
-	width: 80%;
+    width: 80%;
+    
 
 	.day {
 		width: 20%;
 		padding: 15px;
 		display: flex;
 		flex-direction: column;
-        border: 1px solid $bluegreen;
+        border: 3px solid $bluegreen;
         align-items: center;
-	}
+        border-left: none;
+    }
+     div:nth-child(1){
+        border-left: 3px solid $bluegreen
+    }
 	.weatherImage {
 		width: 75%;
 		height: 100px;
