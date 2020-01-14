@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.scss';
 import MainPage from './components/MainPage/MainPage';
 import axios from 'axios';
+import Header from './components/Header/Header';
 
 function App() {
 	const [ data, setData ] = useState({});
@@ -14,8 +15,8 @@ function App() {
 			.catch((err) => console.log(err));
 	}, []);
 	return (
-		<div className='App'>
-			<h1>Weather</h1>
+        <div className='App'>
+            <Header/>
 			<MainPage data={data} />
 		</div>
 	);

@@ -1,0 +1,21 @@
+.current-conditions{
+    display: flex;
+    flex-direction: column;
+}
+
+.forecast{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    .day{
+        display: flex;
+        flex-direction: column;
+        width: 17%;
+        border:2px solid black;
+        align-items: center;
+    }
+    .weatherImage{
+        width: 75%;
+        height: 100px;
+    }
+}
