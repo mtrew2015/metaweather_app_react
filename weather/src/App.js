@@ -15,8 +15,8 @@ function App() {
 			.catch((err) => console.log(err));
 	}, []);
 	return (
-        <div className='App'>
-            <Header/>
+		<div className='App'>
+			<Header />
 			<MainPage data={data} />
 		</div>
 	);
