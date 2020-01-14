@@ -41,7 +41,7 @@ function WeatherCard(props) {
 									{day.humidity}%
 								</p>
 								<p>
-									{day.weather_state_name} 
+									<span>Expect:</span>{day.weather_state_name} 
                                 </p>
                                 <p><span>Confidence:</span> {day.predictability}%</p>
 								<img
