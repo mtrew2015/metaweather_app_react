@@ -9,7 +9,7 @@ function App() {
 
 	useEffect(() => {
         console.log('useEffect Hit')
-		const id = '2487956';
+		const id = '2383660';
 		axios
 			.get(`https://weatherapi.mtrew.now.sh/api/getweather?id=${id}`)
 			.then((res) => setData(res.data))

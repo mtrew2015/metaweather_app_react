@@ -20,7 +20,7 @@ function WeatherCard(props) {
 			)}
 			<div className='forecast'>
 				{forecast &&
-					forecast.slice(0,5).map((day, idx) => {
+					forecast.slice(0, 5).map((day, idx) => {
 						return (
 							<div key={idx} className='day'>
 								<p>
@@ -40,7 +40,10 @@ function WeatherCard(props) {
 									<span>Humidity:</span>
 									{day.humidity}%
 								</p>
-								<p>{day.weather_state_name}</p>
+								<p>
+									{day.weather_state_name} 
+                                </p>
+                                <p><span>Confidence:</span> {day.predictability}%</p>
 								<img
 									className='weatherImage'
 									src={`https://www.metaweather.com/static/img/weather/${day.weather_state_abbr}.svg`}
