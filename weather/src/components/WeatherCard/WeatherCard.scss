@@ -1,21 +1,53 @@
-.current-conditions{
+$dark: rgb(89,79,79);
+$teal: rgb(84,121,128);
+$bluegreen: rgb(69,173,168);
+$lightgreen: rgb(157,224,173);
+$yellow: rgb(229,252,194);
+
+span{
+    color:$yellow;
+    margin-right: 3px;
+}
+
+.forecast-container{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+p{
+    font-size: 1.6rem;
+    color: $lightgreen;
+}
+
+.current-conditions{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: 1.8rem;
+        color: $bluegreen;
+        font-weight: bold;
+    }
 }
 
 .forecast{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
+    width: 80%;
     .day{
+        width: 20%;
+        padding: 15px;
         display: flex;
         flex-direction: column;
-        width: 17%;
-        border:2px solid black;
+        border:2px solid $bluegreen;
         align-items: center;
     }
     .weatherImage{
         width: 75%;
         height: 100px;
+        margin-bottom: 5px;
     }
 }

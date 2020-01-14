@@ -1,0 +1,20 @@
+$dark: rgb(89,79,79);
+$teal: rgb(84,121,128);
+$bluegreen: rgb(69,173,168);
+$lightgreen: rgb(157,224,173);
+$yellow: rgb(229,252,194);
+
+.container{
+    background-color: $dark;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    h1{
+        font-size: 3.6rem;
+        color: $lightgreen;
+        font-weight: bold;
+    }
+}

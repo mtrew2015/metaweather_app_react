@@ -1,9 +1,10 @@
 import React from 'react';
 import WeatherCard from '../WeatherCard/WeatherCard';
+import './MainPage.scss'
 function MainPage(props) {
 	const { data } = props;
 	return (
-		<div>
+		<div className="container">
 			{data.parent && (
 				<h1>
 					Weather For {data.title}, {data.parent.title}{' '}
